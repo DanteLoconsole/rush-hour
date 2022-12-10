@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rush Hour by Dante Loconsole</title>
+        <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+        <meta content="utf-8" http-equiv="encoding">
+        <script src="code.js"></script>
+        <script src="confetti.js"></script> <!-- bron: https://www.cssscript.com/confetti-falling-animation/#google_vignette -->
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    </head>
+
+    <body>
+        <button id="" class="vb_level" onclick="gotolvl_vb()">Vb level</button>
+        <div class="main_container">
+            <div class="titel_container">
+                <h1 class="titel">Rush Hour</h1>
+                <h2 class="ondertitel">by Dante Loconsole</h2>
+                <h3 class="uitleg">Get the red car to the exit!</h3>
+            </div>
+            <div class="levels_container">
+                <div class="levels">
+                    <button id="active" class="level_button level1" onclick="gotolvl1()">Level 1</button>
+                    <button id="" class="level_button level2" onclick="gotolvl2()">Level 2</button>
+                    <button id="" class="level_button level3" onclick="gotolvl3()">Level 3</button>
+                    <button id="" class="level_button level4" onclick="gotolvl4()">Level 4</button>
+                </div>
+            </div>
+            <div class="play_container">
+                <button class="reset_button" onclick="reset()">Reset</button>
+                <div style="position: absolute; top: 225px;">
+                    <div id="playboard"></div>
+                    <div class="exit">EXIT</div>
+                </div>
+                
+                <div class="statistics">
+                    <h2 class="klok">Timer</h2>
+                    <div class="timer" id="timer"></div>
+                    <h2 class="zetten">Moves</h2>
+                    <div class="moves" id="moves"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

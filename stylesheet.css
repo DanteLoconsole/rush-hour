@@ -1,0 +1,265 @@
+/* Achtergrond */
+body{
+    background-color: blanchedalmond;
+}
+.main_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Titel */
+.titel_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.titel{
+    width: 350px;
+    font-size: 50px;
+    text-align: center;
+    border: 3px solid black;
+    border-bottom: 3px dotted black;
+    border-radius: 5px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.ondertitel{
+    width: 350px;
+    font-size: 25px;
+    text-align: center;
+    border: 3px solid black;
+    border-top: none;
+    border-radius: 5px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.uitleg{
+    margin: 0px;
+    margin-top: 5px;
+    color: red;
+    font-style: italic;
+    font-size: 20px;
+}
+
+/* Levels */
+.levels_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}  
+.levels{
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+.level_button{
+    display: flex;
+    justify-content: center;
+    background-color: wheat;
+    font-size: 20px;
+    font-family: 'Times New Roman';
+    font-weight: bold;
+}
+.level_button:hover{
+    color: palevioletred;
+}
+#active{
+    color: rgb(202, 81, 81);
+}
+.vb_level{
+    background-color: blanchedalmond;
+    font-size: 10px;
+    position: absolute;
+    margin: 0px;
+    padding: none;
+}
+
+/* Laatste container */
+.play_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+    margin-bottom: 120px;
+    width: 800px;
+    height: 200px;
+}
+/* > Reset button */
+.reset_button{
+    display: flex;
+    justify-content: center;
+    background-color: wheat;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: 'Times New Roman';
+    color: black;
+    width: 120px;
+    height: 50px;
+    text-align: center;
+    margin-right: 550px;
+}
+.reset_button:hover{
+    color: rgb(202, 81, 81);
+}
+
+/* > Spelbord */
+#playboard{
+    border: 10px solid rgb(202, 81, 81);
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+table{
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+/* >> Auto's */
+.auto{
+    height: 70px;
+    width: 70px;
+}
+.leeg{
+    background-color: rgb(203, 142, 142);
+    height: 70px;
+    width: 70px;
+    border: 1px dotted black;
+}
+.red{
+    background-color: red;
+}
+.blue{
+    background-color: #78A2CC;
+}
+.yellow{
+    background-color: #fafa77;
+}
+.green{
+    background-color: #8ee47f;
+}
+.orange{
+    background-color: #faac3f;
+}
+.purple{
+    background-color: #9572b8;
+}
+.silver{
+    background-color: #CFCFC4;
+}
+.pink{
+    background-color: #F8C8DC;
+}
+.aqua{
+    background-color: #D5F6FB;
+}
+.brown{
+    background-color: #B1907F;
+}
+.gray{
+    background-color: gray;
+}
+.gold{
+    background-color: #BBA151;
+}
+
+/* >> Kant van auto */
+.pos_L{
+    border: 1px solid black;
+    border-right: none;
+}
+.pos_T{
+    border: 1px solid black;
+    border-right: none;
+    border-left: none ;
+}
+.pos_R{
+    border: 1px solid black;
+    border-left: none;
+}
+.pos_B{
+    border: 1px solid black;
+    border-bottom: none;
+}
+.pos_M{
+    border: 1px solid black;
+    border-bottom: none;
+    border-top: none;
+}
+.pos_O{
+    border: 1px solid black;
+    border-top: none;
+}
+
+
+/* > EXIT-veldje */
+.exit{
+    width: 50px;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    transform: rotate(-90deg);
+    position: relative;
+    bottom: 275px;
+    left: 472px;
+}
+
+/* > Timer */
+.statistics{
+    text-align: center;
+    width: 120px;
+    margin: 0px;
+}
+.klok{
+    font-size: 25px;
+    border: 2px solid black;
+    border-bottom: 2px dotted black;
+    border-radius: 5px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.timer{
+    font-size: 30px;
+    border: 2px solid black;
+    border-top: none;
+    border-radius: 5px;
+    margin-bottom: 80px;
+    
+}
+
+/* > Aantal moves */
+.zetten{
+    font-size: 25px;
+    border: 2px solid black;
+    border-bottom: 2px dotted black;
+    border-radius: 5px;
+    margin-top: 80px;
+    margin-bottom: 0px;
+}
+.moves{
+    font-size: 30px;
+    border: 2px solid black;
+    border-top: none;
+    border-radius: 5px;
+}
+
+/* > Cursor die veranderd als je over button gaat */
+button{
+    cursor: pointer;
+}
+
+.move_butt{
+    font-size: 18px;
+    font-family: 'Times New Roman';
+    font-weight: bold;
+    width: 30px;
+    height: 30px;
+}
